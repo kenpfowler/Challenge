@@ -20,7 +20,7 @@ test('firstNonRepeated("aaabcc") => "b"', () => {
   expect(output).toBe("b");
 });
 
-test('firstNonRepeated("    ") => "   "', () => {
+test('firstNonRepeated("    ") => ""', () => {
   const output = firstNonRepeated("   ");
   expect(output).toBe("");
 });
