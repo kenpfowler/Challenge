@@ -18,6 +18,18 @@ test('firstNonRepeated("aabcc") => "b"', () => {
   expect(output).toBe("b");
 });
 
+test('firstNonRepeated("aaabcc") => "b"', () => {
+  const output = firstNonRepeated("aabcc");
+
+  expect(output).toBe("b");
+});
+
+test('firstNonRepeated("    ") => "   "', () => {
+  const output = firstNonRepeated("   ");
+
+  expect(output).toBe("");
+});
+
 test('firstNonRepeated("aabbcc") => ""', () => {
   const output = firstNonRepeated("aabbcc");
   expect(output).toBe("");
