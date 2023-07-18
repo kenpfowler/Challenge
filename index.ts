@@ -1,4 +1,4 @@
-export function firstNonRepeated(input: string, cache?: string) {
+export function firstNonRepeated(input: string, previous?: string) {
   if (!input.length) {
     return "";
   }
@@ -7,7 +7,7 @@ export function firstNonRepeated(input: string, cache?: string) {
   const next = input.charAt(1);
 
   // base case
-  if (current !== next && current !== cache) {
+  if (current !== next && current !== previous) {
     return current;
   }
 
