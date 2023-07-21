@@ -5,27 +5,27 @@ test("Returns an empty string if the input is empty string", () => {
   expect(output).toBe("");
 });
 
-test('firstNonRepeated("hello") => "h"', () => {
+test('Returns "h" if the input is "hello"', () => {
   const output = firstNonRepeated("hello");
   expect(output).toBe("h");
 });
 
-test('firstNonRepeated("aabcc") => "b"', () => {
+test('Returns "b" if the input is "aabcc"', () => {
   const output = firstNonRepeated("aabcc");
   expect(output).toBe("b");
 });
 
-test('firstNonRepeated("aaabcc") => "b"', () => {
+test('Returns "b" if the input is "aaabcc"', () => {
   const output = firstNonRepeated("aaabcc");
   expect(output).toBe("b");
 });
 
-test('firstNonRepeated("    ") => ""', () => {
+test('Returns "" if the input is "    "', () => {
   const output = firstNonRepeated("   ");
   expect(output).toBe("");
 });
 
-test('firstNonRepeated("aabbcc") => ""', () => {
+test('Returns "" if the input is "aabbcc"', () => {
   const output = firstNonRepeated("aabbcc");
   expect(output).toBe("");
 });
