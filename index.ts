@@ -14,3 +14,8 @@ export function firstNonRepeated(input: string, previous?: string) {
   //recursive case
   return firstNonRepeated(input.substring(1), current);
 }
+
+export async function concurrency(...args: Promise<unknown>[]) {
+  const results = await Promise.allSettled(args);
+  return results;
+}
