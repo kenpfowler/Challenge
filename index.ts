@@ -15,7 +15,7 @@ export function firstNonRepeated(input: string, previous?: string) {
   return firstNonRepeated(input.substring(1), current);
 }
 
-export async function concurrency(...args: Promise<unknown>[]) {
+export async function concurrency<T>(...args: Promise<T>[]) {
   const results = await Promise.allSettled(args);
   return results;
 }
